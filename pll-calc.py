@@ -9,7 +9,8 @@ platform = 'xilinx'
 fin     = 50
 fout    = 107.386350
 error_threshold = 0.1
-print(f"platform: {platform} fin: {fin}MHz fout: {fout}MHz, error_threshold: {error_threshold}")
+period = 1.0 / (fin * 1e6) * 1e9
+print(f"platform: {platform} fin: {fin}MHz ({period} ns) fout: {fout}MHz, error_threshold: {error_threshold}")
 
 if platform == 'altera':
     vco_min  = 600
