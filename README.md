@@ -20,7 +20,7 @@ sorted by the least amount of error (deviation) from the
 desired target frequency.
 
 In order to run this script, the python-constraint package
-needs to be installed, which you can find here:
+needs to be installed:
 ```
-https://github.com/python-constraint/python-constraint.git
+pip install python-constraint
 ```
